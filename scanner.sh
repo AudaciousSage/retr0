@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#interface name
+#interface names
 	interface=$'wlan0'
 	interface1='wlan1'
 	
