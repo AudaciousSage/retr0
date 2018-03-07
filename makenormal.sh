@@ -1,9 +1,9 @@
 #!/bin/bash 
 
 #interface names
-        interface=$'wlx7c8bca0b520e'
+        interface=$'wlan0'
         interface1=$'wlan1'
-        interface2=$'wlan0'
+        interface2=$'wlx7c8bca0b520e'
         interface3=$'mon0'
         interface4=$'mon1'
         interface5=$'wlan0mon'
@@ -17,9 +17,9 @@
         sudo service wpa_supplicant restart
 
 #interfaces
-        sudo airmon-ng stop "$interface"
-        sudo ifconfig "$interface3" down
-        sudo airmon-ng stop "$interface3"
+        sudo airmon-ng stop "$interface5"
+        sudo ifconfig "$interface" down
+        sudo iwconfig "$interface" mode managed
         sudo ifconfig "$interface" up
 
 ~                                                                                                                                                                                 
