@@ -20,8 +20,4 @@
         sudo airmon-ng stop "$interface5"
         sudo ifconfig "$interface" down
         sudo iwconfig "$interface" mode managed
-        sudo ifconfig "$interface" up
-
-~                                                                                                                                                                                 
-~                                                                                                                                                                                 
-~                                                         
+        sudo ifconfig "$interface" up                                                                                                          
