@@ -3,7 +3,7 @@
 made by Bunhour(retr0)
 instagram: @dirtmind2
 FACEBOOK: Long bun hour 
-nickname: kid coder
+nickname: retr0
 
 retr0 is a program which have 3 bash used for wireless scanning and also one more for reseting everything back to normal
 
