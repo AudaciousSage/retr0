@@ -5,6 +5,11 @@ instagram: @dirtmind2
 FACEBOOK: Long bun hour 
 nickname: retr0
 
+Installation:
+git clone https://github.com/Bunhour/retr0
+
+bash requirements.sh
+
 retr0 is a program which have 3 bash used for wireless scanning and also one more for reseting everything back to normal
 
 you can use scanner.sh or easyscanner.sh that both is the same thing
