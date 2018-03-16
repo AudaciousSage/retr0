@@ -1,6 +1,9 @@
 #!/bin/bash 
 
-#interface names
+#Logo
+	figlet RETR0
+
+#Interface names
         interface=$'wlan0'
         interface1=$'wlan1'
         interface2=$'wlx7c8bca0b520e'
@@ -9,15 +12,15 @@
         interface5=$'wlan0mon'
         interface6=$'wlan1mon'
 
-#making everthing go normal
+#Making everthing go normal
 
-#sevices
+#Sevices
         sudo service NetworkManager restart
         sudo service avahi-daemon restart
         sudo service wpa_supplicant restart
 
-#interfaces
+#Interfaces
         sudo airmon-ng stop "$interface5"
         sudo ifconfig "$interface" down
         sudo iwconfig "$interface" mode managed
-        sudo ifconfig "$interface" up                                                                                                          
+        sudo ifconfig "$interface" up                                                                                      
