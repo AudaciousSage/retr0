@@ -1,6 +1,9 @@
 #!/bin/bash
 
-#interface names
+#Logo
+	figlet RETR0
+
+#Interface Names
 	interface=$'wlan0'
         interface1=$'wlan1'
         interface2=$'wlx7c8bca0b520e'
@@ -9,14 +12,14 @@
         interface5=$'wlan0mon'
         interface6=$'wlan1mon'
 
+#Putting interface into monitor mode
 
-#putting interface into monitor mode
 	ifconfig "$interface" down
 	iwconfig "$interface" mode monitor
 	ifconfig "$interface" up
 	
-#killing process
+#Killing process
 	airmon-ng check kill
 	
-#scanning 
+#Scanning 
 	airodump-ng "$interface"
