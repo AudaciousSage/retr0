@@ -14,12 +14,12 @@
 
 #Putting interface into monitor mode
 
-	ifconfig "$interface" down
-	iwconfig "$interface" mode monitor
-	ifconfig "$interface" up
+	sudo ifconfig "$interface" down
+	sudo iwconfig "$interface" mode monitor
+	sudo ifconfig "$interface" up
 	
 #Killing process
-	airmon-ng check kill
+	sudo airmon-ng check kill
 	
 #Scanning 
-	airodump-ng "$interface"
+	sudo airodump-ng "$interface"
