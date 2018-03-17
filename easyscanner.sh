@@ -13,10 +13,10 @@
         interface6=$'wlan1mon'
 
 #Putting interface into monitor mode 
-	airmon-ng start "$interface"
+	sudo airmon-ng start "$interface"
 	
 #killing process
-	airmon-ng check kill 
+	sudo airmon-ng check kill 
 
 #scanning 
-	airodump-ng "$interface5"
+	sudo airodump-ng "$interface5"
