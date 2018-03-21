@@ -1,6 +1,10 @@
 #!/bin/bash
 
-#Logo
+#Logo and stuffs
+
+	echo " ################### "
+	echo " Wait, loading...... "
+	echo " ################### "
 	figlet RETR0
 
 #Interface Names
