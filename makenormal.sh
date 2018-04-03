@@ -1,5 +1,9 @@
 #!/bin/bash 
 
+#clear
+
+clear
+
 #Logo and stuffs
 
 	echo " ################### "
